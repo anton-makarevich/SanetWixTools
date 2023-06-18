@@ -61,9 +61,8 @@ wix build <your wix source files > -o <your wix bundle>
 
 ## Example
 
-The example of how Wix Components Updater can be used in a real typical workflow could be found in the `MagicalYatzyXF` repo, where it used in the `publish-windows.yml` GitHub Action.
+An example of how Wix Components Updater can be used in a real workflow could be found in the `MagicalYatzyXF` repo, where it used in the `publish-windows.yml` GitHub Action.
 
 ## License
 
 Wix Components Updater is released under the [MIT License](LICENSE.md). See the `LICENSE.md` file for more details.
-```
