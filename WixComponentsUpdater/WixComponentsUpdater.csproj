@@ -8,7 +8,7 @@
         <RootNamespace>Sanet.Tools.Wix</RootNamespace>
 
         <PackageId>Sanet.Tools.Wix.ComponentsUpdater</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Authors>Anton Makarevich</Authors>
         <Company>Anton Makarevich</Company>
         <Description>A tool to describe dotnet output as a WiX Component</Description>
@@ -19,6 +19,7 @@
     <PropertyGroup>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/anton-makarevich/SanetWixTools</PackageProjectUrl>
     </PropertyGroup>
 
     <ItemGroup>
