@@ -5,16 +5,16 @@ Wix Components Updater is a .NET tool that simplifies the process of generating 
 ## Overview
 
 When building a WiX project, it can be challenging to manually add all the output files, especially when there are many dependencies or when new files are added to the project. Wix Components Updater automates this process by scanning a specified folder and generating WiX component entries for any DLL or EXE files that are not already present in the WiX source file.
-Wix's heat harvester tool can help with it but sometimes you want to have something simple (for a simple task) 
+Wix's heat harvester tool can help with it as well, but it's a complex tool that require a lot of configurations. For ci/cd scenarios I needed something very simple.  
 
 ## Installation
 
-Wix Components Updater can be installed as a .NET tool via NuGet. Make sure you have the .NET Core CLI installed.
+Wix Components Updater can be installed as a .NET tool via NuGet. Make sure you have the .NET CLI installed.
 
-To install Wix Components Updater, use the following command:
+To install Wix Components Updater (`sanet-wix-tools`), use the following command:
 
 ```bash
-dotnet tool install WixComponentsUpdater --global --version 1.0.0
+dotnet tool install sanet-wix-tools --global
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ dotnet publish -c Release
 4. Run Wix Components Updater, providing the `componentName` (which should match your WiX source file name without the extension) and the `pathToOutput` where the output files are located. For example:
 
 ```bash
-dotnet wix-components-updater MyComponentName ../../Myapp/bin/Debug/net7.0/publish
+dotnet sanet-wix-tools MyComponentName ../../Myapp/bin/Debug/net7.0/publish
 ```
 
 Wix Components Updater will scan the specified folder for DLL and EXE files. For each file that doesn't already have a corresponding component entry in the WiX source file, it will generate a new component entry and add it to the ComponentGroup in the XML.
