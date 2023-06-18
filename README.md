@@ -14,14 +14,14 @@ Wix Components Updater can be installed as a .NET tool via NuGet. Make sure you 
 To install Wix Components Updater (`sanet-wix-tools`), use the following command:
 
 ```bash
-dotnet tool install sanet-wix-tools --global
+dotnet tool install --global Sanet.Tools.Wix.ComponentsUpdater --version 1.0.0
 ```
 
 ## Usage
 
 To use Wix Components Updater, follow these steps:
 
-1. Create a WiX source file (`<componentName>.wxs`) for a component and add the necessary component entries for the main files in your project. You can specify additional parameters as needed:
+1. *[Optional]* Create a WiX source file (`<componentName>.wxs`) for a component and add the necessary component entries for the main files in your project. You can specify additional parameters as needed:
 ```xml
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
   <Fragment>
